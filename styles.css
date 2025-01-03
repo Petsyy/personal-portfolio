@@ -22,6 +22,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+
 }
 
 nav {
@@ -88,8 +89,9 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-.section {
+.about-section {
   background-color: var(--extra-light);
+  
 }
 
 .section-container {
@@ -179,3 +181,25 @@ ul li a:hover {
   }
 
 }
+
+
+.social-links {
+  font-size: 2.25rem;
+}
+
+.social-links a {
+  padding: 0;
+  margin: 0.75rem;
+}
+
+.social-links a:hover i {
+  color: #a5d6b0;
+  transform: scale(1.2);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links i {
+  color: #588061;
+  font-weight: 500;
+}
+
