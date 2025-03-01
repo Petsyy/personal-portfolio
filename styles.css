@@ -298,3 +298,11 @@ ul li a:hover {
   font-weight: 300;
   color: #494a4a;
 }
+
+footer {
+  background-color: #909090;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
