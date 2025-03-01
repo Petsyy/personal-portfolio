@@ -145,43 +145,6 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-@media (width < 768px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section-container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1;
-  }
-
-}
-
 .social-links {
   font-size: 2.25rem;
 }
@@ -206,7 +169,6 @@ ul li a:hover {
 #projects-section {
   width: 100%;
   margin: auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,19 +218,6 @@ ul li a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .projects-scroll-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-box {
-    width: 90%;
-    max-width: 20rem;
-    margin: 0.5rem 0;
-  }
-}
-
 .project-box:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -305,4 +254,113 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.875rem;
+}
+
+/* Skills Section */
+#skills-section {
+  min-height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem; /* Add gap between elements */
+}
+
+#skills-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+#skills-section .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add gap between icons */
+}
+
+#skills-section i {
+  font-size: 3rem;
+  color: #588061;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section i:hover {
+  transform: scale(1.2);
+  color: #a5d6b0;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-scroll-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-box {
+    width: 90%;
+    max-width: 20rem;
+    margin: 0.5rem 0;
+  }
+
+@media (max-width: 768px) {
+    nav .left a {
+        font-size: 1.25rem;
+    }
+
+    nav .right a {
+        font-size: 1.1rem;
+        margin: 0 0.375rem;
+    }
+
+    #about-section .headshot {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem;
+    }
+
+    #skills-section .skills-container {
+        gap: 1.25rem;
+     }
+  }
+
+@media (width < 768px) {
+  nav .checkbox {
+    display: block;
+  }
+  
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+  
+  ul li a {
+    font-size: 1.25rem;
+  }
+  
+  .section-container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .image {
+    grid-area: 1;
+  }
+  
+}
+  
 }
